@@ -66,7 +66,6 @@ convert_to_datetime(df, ['data'], semaphore)
 #apply_md5(df, ['nome', 'sobrenome'], semaphore)
 #apply_sha1(df, ['nome', 'sobrenome'], semaphore)
 #apply_sha256(df, ['nome', 'sobrenome'], semaphore)
-#mask_first_n_characters(df, ['nome', 'sobrenome'], 3, semaphore)
 #perturb_date(df, ['data'], 'days', -10, 10, semaphore)
 #perturb_date(df, ['data'], 'hours', -10, 10, semaphore)
 #perturb_date(df, ['data'], 'minutes', -10, 10, semaphore)
@@ -80,16 +79,17 @@ convert_to_datetime(df, ['data'], semaphore)
 #swap_rows(df, ['nome', 'sobrenome'], semaphore)
 
 #Métodos incompletos:
-#encrypt_chacha20(df, 'nome', 'teste', semaphore) [falta trocar uma coluna por array de colunas]
-#encrypt_salsa20(df, 'nome', 'teste', semaphore) [falta trocar uma coluna por array de colunas]
-#encrypt_aes(df, 'nome', 'teste', semaphore) [falta trocar uma coluna por array de colunas]
-#df = drop_columns(df, ['nome', 'sobrenome'], semaphore) [revisar para evitar possíveis problemas]
-#perturb_numeric_laplacian(df, ['idade'], 0.1, semaphore) [estudar se só funciona para float]
+#encrypt_chacha20(df, 'nome', 'teste', semaphore) #[falta trocar uma coluna por array de colunas]
+#encrypt_salsa20(df, 'nome', 'teste', semaphore) #[falta trocar uma coluna por array de colunas]
+#encrypt_aes(df, 'nome', 'teste', semaphore) #[falta trocar uma coluna por array de colunas]
+#df = drop_columns(df, ['nome', 'sobrenome'], semaphore) #[revisar para evitar possíveis problemas]
+#perturb_numeric_laplacian(df, ['idade'], 0.1, semaphore) #[estudar se só funciona para float]
 
 # Métodos para correção:
 #mask_full(df,['idade'], semaphore)
 #mask_range(df, ['nome', 'sobrenome'], 1, 2, semaphore)
 #mask_last_n_characters(df, ['nome', 'sobrenome'], 3, semaphore)
+#mask_first_n_characters(df, ['nome', 'sobrenome'], 3, semaphore)
 #mask_email(df, ['email', 'sobrenome'], semaphore)
 #mask_cpf(df, 'cpf', semaphore)
 #perturb_numeric_range(df, ['idade'], 5, semaphore)
